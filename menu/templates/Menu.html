@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+       
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+
+        {% extends 'theme.html' %}
+
+        {% block content %}
+
+
+<BR>
+    <BR>
+        <BR>
+
+          <div class="menu" style="color: white; font-size: xx-large;text-align: center;text-decoration: wavy;text-decoration: underline;">
+<p><b>MENU</b></p>
+          </div>
+<br>
+<br>
+<br>
+
+<div class="slides">
+
+    <div id="carouselExample" class="carousel slide" >
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <img src="4.jpeg" class="d-block w-100" style="padding-left: 375px;height: 400px;width: 500px;border-width: 10px;border-color: black;border-style: double;"  alt="plumcake">
+          </div>
+          <div class="carousel-item">
+            <img src="3.jpeg" class="d-block w-100" style="padding-left: 375px;height: 400px;width: 500px;border-width: 10px;border-color: black;border-style: double;"  alt="pizza">
+          </div>
+          <div class="carousel-item">
+            <img src="6.jpeg" class="d-block w-100"  style="padding-left: 375px;height: 400px;width: 500px;border-width: 10px;border-color: black;border-style: double;" alt="bluberry">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+
+<div class="bod">
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          {% for item in menu %}
+          <div class="card">
+            <img src="{{item.Image}}" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">{{item.Name}}</h5>
+              <p class="card-text">{{item.Description}}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">{{item.Price}}</small>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{{item.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{item.name}}</h5>
+              <p class="card-text">{{item.Description}}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">{{item.Price}}</small>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{{item.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{item.name}}</h5>
+              <p class="card-text">{{item.Description}}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">{{item.Price}}</small>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{{item.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{item.name}}</h5>
+              <p class="card-text">{{item.Description}}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">{{item.Price}}</small>
+              </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+</div>
+
+    </body>
+</html>

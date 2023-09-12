@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+                
+            
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+
+        {% extends 'theme.html' %}
+
+        {% block content %}
+
+<br><br><br><br>
+
+          <div class="body">
+
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="email">
+                </div>
+                <div class="col-12">
+                  <label for="inputphone2" class="form-label">Phone No. :</label>
+                  <input type="number" class="form-control" id="inputphone2" placeholder="Phone No." min="10" max="10">
+                </div>
+               <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                  <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+              </form>
+              
+              
+          </div>
+{% endfor %}
+        </div>
+    </body>
+</html>
